@@ -1,0 +1,24 @@
+<div class="nav-holder">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <%= render partial: "layouts/navbar_header" %>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <%= link_to "Dashboard", admin_index_path  %>
+                    </li>
+                    <li>
+                        <% if admin_signed_in? %>
+                            <li><%= link_to "Sign out", destroy_admin_session_path, :method => :delete %></li>
+                        <% end %>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</div>

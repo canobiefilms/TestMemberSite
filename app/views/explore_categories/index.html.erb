@@ -1,0 +1,17 @@
+<%= render partial: "layouts/public_nav" %>
+<body class="page">
+  <% @category.each do |cat| %>
+    <section class="cat-id-<%= cat.id %> bg-img bg-<%= cat.color_theme %>">
+        <div class="container">
+            <%= link_to explore_category_path(cat) do %>
+                <div class="row">
+                    <div class="cat-header col-md-10 col-md-offset-1">
+                    <%= cat.name.split(",").map {|split| "<h2 class=\"section-heading\"><span>#{split}</span></h2>" }.to_a.join(" ").html_safe %>
+                    </a>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </section>
+  <% end %>
+</body>

@@ -1,0 +1,33 @@
+<div>
+  <%= form_for @explore_article do |f| %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </p>
+
+  <p>
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </p>
+
+  <p>
+    <%= f.label :article_URL %><br>
+    <%= f.text_field :article_URL %>
+  </p>
+
+  <p>
+    <%= f.collection_select :explore_category_id, @category, :id, :name, {include_blank: 'Please Select'}, {class: 'selectpicker chosen-select'} %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+  <% end %>
+</div>

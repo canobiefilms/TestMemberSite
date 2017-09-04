@@ -1,0 +1,25 @@
+<%= render partial: "layouts/member_nav" %>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="section-heading">All Articles</h2>
+
+                <table class="table">
+                  <thead class="thead-inverse">
+                    <th>Title</th>
+                    <th>Snippet</th>
+                  </thead>
+
+                  <% @articles.each do |article| %>
+                    <tr>
+                      <td><%= link_to article.title, article_path(article) %></td>
+                      <td><%= article.text[0,50] + "..." %></td>
+                      <td></td>
+                    </tr>
+                  <% end %>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

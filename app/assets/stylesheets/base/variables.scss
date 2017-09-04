@@ -1,0 +1,47 @@
+// Variables
+
+@font-face{
+  font-family: "Gotham";
+  src: font-url("GothamRnd_Medium.otf");
+  text-rendering: optimizeLegibility;
+}
+
+@font-face{
+  font-family: "Din-Light";
+  src: font-url("DIN_Light.otf");
+  text-rendering: optimizeLegibility;
+}
+
+@font-face{
+  font-family: "Din-Bold";
+  src: font-url("DIN_Bold.otf");
+  text-rendering: optimizeLegibility;
+}
+
+$maxwidth: 1310px;
+
+// Gray and Brand Colors for use across theme
+
+$yellow: #FFC679;
+$orange: #FAB393;
+$coral: #F25A29;
+$blue: #28AAE3;
+$green: #B0CC99;
+$red: #F9768D;
+$light-blue: #82AEC1;
+$dark-blue: #14407D;
+$purple: #6C6F9E;
+
+$theme-primary:    #14407D;
+$theme-secondary:  #6C6F9E;
+
+$gray-base:        #000;
+$gray-darker:      lighten($gray-base, 13.5%); // #222
+$gray-dark:        lighten($gray-base, 20%);   // #333
+$gray:             lighten($gray-base, 33.5%); // #555
+$gray-light:       lighten($gray-base, 46.7%); // #777
+$gray-lighter:     lighten($gray-base, 93.5%); // #eee
+
+$brand-twitter:   #1da1f2;
+$brand-facebook:  #3b5998;
+$brand-google-plus: #dd4b39;

@@ -1,0 +1,40 @@
+<%= render partial: "layouts/admin_nav" %>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h3>Explore Article</h3>
+
+              <p>
+                <span class="text-muted">Title:</span>
+                <%= @explore_article.title %>
+              </p>
+
+              <p>
+                <span class="text-muted">Author:</span>
+                <%= @explore_article.author %>
+              </p>
+
+              <p>
+                <span class="text-muted">Source:</span>
+                <%= @explore_article.source %>
+              </p>
+
+              <p>
+                <span class="text-muted">Explore Category ID:</span>
+                <%= @explore_article.explore_category_id %>
+              </p>
+
+              <p>
+                <span class="text-muted">Article URL:</span>
+                <%= @explore_article.article_URL %>
+              </p>
+
+              <%= link_to 'Edit', edit_explore_article_path(@explore_article) %> |
+              <%= link_to 'Delete', explore_article_path(@explore_article), method: :delete, data: {confirm: "Are you certain you want to delete this record?"} %> |
+              <%= link_to 'Back to All Articles', explore_articles_path %>
+
+            </div>
+        </div>
+    </div>
+</section>

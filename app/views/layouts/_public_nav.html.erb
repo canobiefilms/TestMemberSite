@@ -1,0 +1,36 @@
+<div class="nav-holder">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <%= render partial: "layouts/navbar_header" %>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle underline_elmt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="/motivation">Motivation</a></li>
+                              <li><a href="/canobie">Canobie Films</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll underline_elmt" href="/watch">Trailer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll underline_elmt" href="/participants">Participants</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle underline_elmt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="/explore_categories/1">SAT News</a></li>
+                              <li><a href="/explore_categories/2">Inside the New SAT</a></li>
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</div>

@@ -1,0 +1,207 @@
+<%= render partial: "layouts/public_nav" %>
+    <header class="intro">
+        <div class="landing">
+            <%= image_tag("main-title-test.jpg", class: "landing-img img-responsive", alt: "main-title") %>
+            <p class="landing-quote left-align">"Amet iur arita sectiasin arita sectia- sin arita sectiasin pedis aute"<br /><span class="text-italicized">-Documentary Participant</span></p>
+            <p class="landing-quote right-align">"Amet iur arita sectiasin arita sectia"<br /><span class="text-italicized">-Documentary Participant</span></p>
+        </div>
+    </header>
+
+    <section id="about" class="about bg-yellow">
+        <div class="container">
+            <div class="row">
+                <div class="space-break col-md-10 col-md-offset-1">
+                    <h2 class="section-heading"><span>ABOUT</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="synopsis">
+                                <p> Parents and students understand the energy and emotions conjured by the SAT, which is not only part of the college admissions process, but also a true rite of passage for teenagers in the United States. Most of us never forget our score, or how we feel about it. This film endeavors to support individuals—especially young people—by examining what the test measures and means, and asking a range of visionaries, admissions professionals, and interested parties to discuss the use and ramifications of the test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="watch" class="trailer bg-orange">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="section-heading"><span>WATCH</span></h2>
+                    <div class="video-wrapper">
+                        <iframe src="https://player.vimeo.com/video/185692719?title=0&byline=0&portrait=0" width="1024" height="768" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contributors" class="contributors bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="section-heading"><span>PARTICIPANTS</span></h2>
+                        <div class="col-md-4 col-sm-6 col-xs-6 contributor-bio">
+                            <a href="#bill_fitzsimmons" class="contributor-link" data-toggle="modal">
+                                <div class="contributor-hover">
+                                    <div class="contributor-hover-content">
+                                        <i class="fa fa-info-circle fa-2x"></i>
+                                    </div>
+                                </div>
+                                <%= image_tag("contributor-img/Fitzsimmons.jpg", class: "img-responsive", alt: "Bill Fitzsimmons") %>
+                                <div class="contributor-caption">
+                                    <h4>Bill Fitzsimmons</h4>
+                                    <p class="text-muted">Dean of Admissions at Harvard</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 contributor-bio">
+                            <a href="#richard_atkinson" class="contributor-link" data-toggle="modal">
+                                <div class="contributor-hover">
+                                    <div class="contributor-hover-content">
+                                        <i class="fa fa-info-circle fa-2x"></i>
+                                    </div>
+                                </div>
+                                <%= image_tag("contributor-img/Atkinson.jpg", class: "img-responsive", alt: "Dr. Richard C. Atkinson") %>
+                                <div class="contributor-caption">
+                                    <h4>Dr. Richard C. Atkinson</h4>
+                                    <p class="text-muted">Former President and Regent of the University of California System</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 contributor-bio">
+                            <a href="#howard_gardner" class="contributor-link" data-toggle="modal">
+                                <div class="contributor-hover">
+                                    <div class="contributor-hover-content">
+                                        <i class="fa fa-info-circle fa-2x"></i>
+                                    </div>
+                                </div>
+                                <%= image_tag("contributor-img/Gardner.jpg", class: "img-responsive", alt: "Howard Gardner") %>
+                                <div class="contributor-caption">
+                                    <h4>Howard Gardner</h4>
+                                    <p class="text-muted">Professor of Cognition and Education at the Harvard Graduate School of Education</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 contributor-bio">
+                            <a href="#martha_allman" class="contributor-link" data-toggle="modal">
+                                <div class="contributor-hover">
+                                    <div class="contributor-hover-content">
+                                        <i class="fa fa-info-circle fa-2x"></i>
+                                    </div>
+                                </div>
+                                <%= image_tag("contributor-img/Allman.jpg", class: "img-responsive", alt: "Martha Allman") %>
+                                <div class="contributor-caption">
+                                    <h4>Martha Allman</h4>
+                                    <p class="text-muted">Dean of Admissions at Wake Forest University</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 contributor-bio">
+                            <a href="#akil_bello" class="contributor-link" data-toggle="modal">
+                                <div class="contributor-hover">
+                                    <div class="contributor-hover-content">
+                                        <i class="fa fa-info-circle fa-2x"></i>
+                                    </div>
+                                </div>
+                                <%= image_tag("contributor-img/Bello.jpg", class: "img-responsive", alt: "Akil Bello") %>
+                                <div class="contributor-caption">
+                                    <h4>Akil Bello</h4>
+                                    <p class="text-muted">Cofounder of Bell Curves</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 contributor-bio">
+                            <a href="#ted_oneill" class="contributor-link" data-toggle="modal">
+                                <div class="contributor-hover">
+                                    <div class="contributor-hover-content">
+                                        <i class="fa fa-info-circle fa-2x"></i>
+                                    </div>
+                                </div>
+                                <%= image_tag("contributor-img/O'Neill.jpg", class: "img-responsive", alt: "Ted O'Neill") %>
+                                <div class="contributor-caption">
+                                    <h4>Ted O'Neill</h4>
+                                    <p class="text-muted">Dean of College Admissions at the University of Chicago</p>
+                                </div>
+                            </a>
+                        </div>
+                    <div class=" col-md-12 col-sm-12 col-xs-12 text-center">
+                        <a href="/participants" class="btn btn-section">MEET MORE PARTICIPANTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%= render partial: "participants/multiple-mention-contributors-modal" %>
+    </section>
+
+    <section id="explore" class="explore bg-purple">
+        <div class="container">
+            <div class="row">
+                <div class="space-break col-md-10 col-md-offset-1">
+                    <h2 class="section-heading"><span class="highlight">EXPLORE</span></h2>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="facts-collection">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="box-caption">
+                                        <h1 class="text-center">1.6</h1>
+                                        <h1 class="text-center">million</h1>
+                                        <h4 class="text-center">students in the class of 2016 took the SAT</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="box-caption">
+                                        <h1 class="text-center">80%</h1>
+                                        <h4 class="text-center">of US high school graduates will take the SAT/ACT
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="box-caption">
+                                        <h1 class="text-center">70%</h1>
+                                        <h4 class="text-center">of the top 400 US colleges require SAT/ACT scores</h4>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="box-caption">
+                                        <h1 class="text-center">56%</h1>
+                                        <h4 class="text-center">of college admissions office attribute “considerable importance” to SAT/ACT scores</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="explore-text" class="col-md-12 col-sm-12 col-xs-12">
+                        <h3>Enter our EXPLORE section to learn more about the SAT, including the new version that debuted in 2016.</h3>
+                        <p>See the latest test prep and college admissions news, and submit a quesetion.</p>
+                        <p>Follow the SAT's history from its origins as an experimental exam given to 8,000 students in 1926 to its widespread adoption as an admissions tool that has played a curucial role in sorting applicants to America's colleges.</p>
+                        <p>Examine controversies related to validity, fairness, coachability, and test security of the SAT, as awell as questions raised about the many ways in which test scores are used.</p>
+                        <p>Learn about the rapidly growing test optional admissions movement, and the recently-implemented use of the SAT by states to measure student mastery of the high school curriculum.</p>
+                        <div class="text-center">
+                            <a href="/explore_categories" class="btn btn-section">DIG DEEPER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-585477d325588cdc"></script>
+
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>

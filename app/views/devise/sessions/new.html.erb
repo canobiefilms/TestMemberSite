@@ -1,0 +1,53 @@
+<div class="nav-holder">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <%= render partial: "layouts/navbar_header" %>
+        </div>
+    </nav>
+</div>
+
+<% if flash[:notice] -%>
+  <p class="alert alert-info"><%= notice %></p>
+<% end %>
+<% if flash[:alert] -%>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="user-page">
+                <div class="form">
+                  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                    <h2 class="section-heading">LOGIN</h2>
+                    <div class="field">
+                      <%= f.label :email %><br />
+                      <%= f.email_field :email, autofocus: true %>
+                    </div>
+
+                    <div class="field">
+                      <%= f.label :password %><br />
+                      <%= f.password_field :password, autocomplete: "off" %>
+                    </div>
+
+                    <% if devise_mapping.rememberable? -%>
+                      <div class="field">
+                        <%= f.check_box :remember_me, :class => 'check-box' %> <%= f.label :remember_me %>
+                      </div>
+                    <% end -%>
+
+                    <div class="actions">
+                      <%= f.submit "LOGIN", :class => 'button' %>
+                    </div>
+                  <% end %>
+
+                  <p class="message">
+                    <%= render "devise/shared/links" %>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,78 @@
+// Place all the styles related to the Explore controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "base/mixins.scss";
+@import "base/variables.scss";
+
+.sub-desc {
+  color: black;
+  font-size: 19px;
+  padding-bottom: 2px;
+}
+
+.sub-desc.yellow {
+  background-color: $yellow;
+}
+
+.sub-desc.orange {
+  background-color: $orange;
+}
+
+h4.art-title{
+  font-size: 18.5px;
+  padding-top: 10px;
+  border-top-style: solid;
+}
+
+h4.art-title.yellow {
+  border-color: $yellow;
+}
+
+h4.art-title.orange {
+  border-color: $orange;
+}
+
+section.cat-id-1,
+section.cat-id-2,
+section.cat-id-3,
+section.cat-id-4,
+section.cat-id-5, {
+  @media(min-width: 1000px) {
+    min-height: 650px;
+  }
+  display: block;
+  position: relative;
+}
+
+section.cat-id-1::after {
+  content: "";
+  background: url(/assets/explore_001.jpg);
+
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+section.cat-id-2::after {
+  content: "";
+  background: url(/assets/explore_002.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.article-box {
+  min-height: 120px;
+  margin: 15px 0 25px 0;
+}
+

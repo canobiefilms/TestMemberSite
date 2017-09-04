@@ -1,0 +1,82 @@
+// Mixins
+@import "variables.scss";
+
+@mixin transition-all {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.button-variant {
+  color: $theme-primary;
+  background-color: $theme-primary;
+  border-color: $theme-secondary;
+  @include transition-all;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle {
+    color: $theme-primary;
+    background-color: darken($theme-primary, 5%);
+      border-color: darken($theme-secondary, 7%);
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $theme-primary;
+      border-color: $theme-secondary;
+    }
+  }
+
+  .badge {
+    color: $theme-primary;
+    background-color: $theme-secondary;
+  }
+}
+
+.parallax {
+    /* The image used */
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bckgnd-img-sec {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
